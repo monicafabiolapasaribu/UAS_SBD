@@ -42,6 +42,22 @@ create trigger update_nama_obat before update on obat for each row insert into l
 
 ![image](https://user-images.githubusercontent.com/101724604/179682146-c6d9e622-4abf-417c-8d5c-3f5a0d0937db.png)
 
+Fungsi dari triger disini untuk menampilkan perubahan nama obat setelah dilakukan proses update.
+
+### Tampilan Data User.
+Fungsi User yaitu untuk melakukan proses login.
+
+![image](https://user-images.githubusercontent.com/101724604/179682721-7aade03c-4fd3-41e2-aca0-85542347816d.png)
+
+### Implementasi Fungsi.
+Mengimplementasikan Fungsi untuk menampilkan total data :
+
+CREATE FUNCTION fn_totalUsers() RETURNS INT(11) UNSIGNED NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER RETURN (SELECT COUNT(id_pasien) FROM pasien)
+
+![image](https://user-images.githubusercontent.com/101724604/179683260-a35fb472-9df2-4c1b-9cf3-86fd29720bae.png)
+
+
+
 
 
 
